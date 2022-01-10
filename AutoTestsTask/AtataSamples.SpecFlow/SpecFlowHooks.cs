@@ -1,5 +1,4 @@
-﻿using Atata.SpecFlow.Components;
-using TechTalk.SpecFlow;
+﻿using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Infrastructure;
 
 namespace Atata.SpecFlow

@@ -1,5 +1,5 @@
 ﻿using System;
-using Atata.SpecFlow.Components;
+using Atata.SpecFlow.Entities;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 

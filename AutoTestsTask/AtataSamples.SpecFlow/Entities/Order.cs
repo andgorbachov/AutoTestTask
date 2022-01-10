@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Globalization;
 
-namespace Atata.SpecFlow.Components
+namespace Atata.SpecFlow.Entities
 {
     public class Order
     {
@@ -27,6 +27,10 @@ namespace Atata.SpecFlow.Components
         private double ServiceCharge = GeneralConstants.ServiceCharge;
         private double DrinkDiscount = GeneralConstants.DrinkDiscount;
 
+        /// <summary>
+        ///     Calculates and adds the sum to the Order Total.
+        /// </summary>
+        /// <returns>Returns the sum added to the Order.</returns>
         public double AddToOrder()
         {
             var foodCosts = StarterPrice * Starters + MainPrice * Mains;
@@ -37,6 +41,10 @@ namespace Atata.SpecFlow.Components
             return result;
         }
 
+        /// <summary>
+        ///     Gets the Order Details as Dictionary.
+        /// </summary>
+        /// <returns>Returns the Order Details as Dictionary<string, string>.</returns>
         public Dictionary<string, string> GetDetails()
         {
             var details = new Dictionary<string, string>()
@@ -51,6 +59,10 @@ namespace Atata.SpecFlow.Components
             return details;
         }
 
+        /// <summary>
+        ///     Closes the Order - Clean/Reset Order data.
+        /// </summary>
+        /// <param name="order">Order.</param>
         public void CloseOrder()
         {
             People = 0;
