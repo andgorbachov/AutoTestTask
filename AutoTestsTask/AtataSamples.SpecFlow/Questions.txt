@@ -1,0 +1,19 @@
+﻿Questions to be clarified.
+
+1. "...add a 10% service charge on food..." - Does it mean that the Starters and Mains should be charged and Drinks should not?
+If Yes, so current implementation is Ok.
+
+2. When exactly we can consider that the order performes before 19-00?
+Is it order time or paying time?
+This question bear the set of questions for all of test cases.
+
+3. Test #1
+Is the order before 19-00 or later?
+To cover the test entirely there were two tests created.
+
+4. Test #2
+Does it matter that first two people continue with other? 
+Looks like they should pay with Drink discounts as they ordered before 19-00.
+
+5. Test #3
+It is not clear how the order can be cancelled once it was already sent to endpoint?
