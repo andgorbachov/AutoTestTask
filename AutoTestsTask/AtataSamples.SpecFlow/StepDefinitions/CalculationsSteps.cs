@@ -8,6 +8,8 @@ namespace Atata.SpecFlow.StepDefinitions
     [Binding]
     public sealed class CalculationsSteps : BaseSteps
     {
+        public Order Order;
+
         [Given(@"A group of (.*) people orders (.*) starters, (.*) mains and (.*) drinks before 19-00 (.*)")]
         public void GivenAGroupOfPeopleOrdersStartersMainsAndDrinksBeforeTrue(int people, int starters, int mains, int drinks, bool before19)
         {
@@ -18,8 +20,7 @@ namespace Atata.SpecFlow.StepDefinitions
             //    Drinks.Set(drinks).
             //    Before19.Set(before19);
 
-            Order order = new(people, starters, mains, drinks, before19);
-            order.GetCosts();
+            Order = OrderManager.CreateUpdateOrder(people, starters, mains, drinks, before19);
         }
         
         [When(@"A group of (.*) people orders (.*) starters, (.*) mains and (.*) drinks and before 19-00 (.*)")]
@@ -32,8 +33,7 @@ namespace Atata.SpecFlow.StepDefinitions
             //    Drinks.Set(drinks).
             //    Before19.Set(before19);
 
-            Order order = new(people, starters, mains, drinks, before19);
-            order.GetCosts();
+            Order = OrderManager.CreateUpdateOrder(people, starters, mains, drinks, before19);
         }
 
         [When(@"The order is sent to the endpoint")]
@@ -49,9 +49,8 @@ namespace Atata.SpecFlow.StepDefinitions
         {
             // Templates for future UI 
             //On<OrdersPage>().Result.Should.Equal(result);
-            double TOLERANCE = 0.1;
-            Assert.True(Math.Abs(Order.Total - result) < TOLERANCE);
-            Order.Total = 0;
+            Assert.True(Order.Total.Equals(result));
+            OrderManager.CloseOrder(Order);
         }
     }
 }

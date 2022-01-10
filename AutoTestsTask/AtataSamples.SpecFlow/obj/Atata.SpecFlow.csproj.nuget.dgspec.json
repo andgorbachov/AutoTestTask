@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andrii.horbachov\\Desktop\\ArgusTests\\AtataSamples.SpecFlow\\Atata.SpecFlow.csproj": {}
+    "C:\\Users\\andrii.horbachov\\Desktop\\New\\AutoTestsTask\\AtataSamples.SpecFlow\\Atata.SpecFlow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andrii.horbachov\\Desktop\\ArgusTests\\AtataSamples.SpecFlow\\Atata.SpecFlow.csproj": {
+    "C:\\Users\\andrii.horbachov\\Desktop\\New\\AutoTestsTask\\AtataSamples.SpecFlow\\Atata.SpecFlow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andrii.horbachov\\Desktop\\ArgusTests\\AtataSamples.SpecFlow\\Atata.SpecFlow.csproj",
+        "projectUniqueName": "C:\\Users\\andrii.horbachov\\Desktop\\New\\AutoTestsTask\\AtataSamples.SpecFlow\\Atata.SpecFlow.csproj",
         "projectName": "Atata.SpecFlow",
-        "projectPath": "C:\\Users\\andrii.horbachov\\Desktop\\ArgusTests\\AtataSamples.SpecFlow\\Atata.SpecFlow.csproj",
+        "projectPath": "C:\\Users\\andrii.horbachov\\Desktop\\New\\AutoTestsTask\\AtataSamples.SpecFlow\\Atata.SpecFlow.csproj",
         "packagesPath": "C:\\Users\\andrii.horbachov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andrii.horbachov\\Desktop\\ArgusTests\\AtataSamples.SpecFlow\\obj\\",
+        "outputPath": "C:\\Users\\andrii.horbachov\\Desktop\\New\\AutoTestsTask\\AtataSamples.SpecFlow\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
